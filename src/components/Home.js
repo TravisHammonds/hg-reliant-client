@@ -22,13 +22,13 @@ const Home = () => {
   // Carousel data for "Our Work"
   const workItems = [
     {
-      beforeImg: "before1.jpg",
-      afterImg: "after1.jpg",
+      beforeImg: "assets/images/IMG_3904.png",
+      afterImg: "assets/images/IMG_3905.png",
       description: "Before and After - Front View",
     },
     {
-      beforeImg: "before2.jpg",
-      afterImg: "after2.jpg",
+      beforeImg: "assets/images/IMG_3908.png",
+      afterImg: "assets/images/IMG_3913.png",
       description: "Before and After - Kitchen Renovation",
     },
     // Add more work items as needed
@@ -110,7 +110,7 @@ const Home = () => {
       </section>
 
       {/* Our Work Carousel */}
-      <Container className="my-5">
+      {/* <Container className="my-5">
         <h2 className="section-header text-center mb-4">Our Work</h2>
         <Carousel className="our-work-carousel">
           {workItems.map((work, index) => (
@@ -137,7 +137,7 @@ const Home = () => {
             </Carousel.Item>
           ))}
         </Carousel>
-      </Container>
+      </Container> */}
 
       {/* Footer */}
       <footer className="footer-section">

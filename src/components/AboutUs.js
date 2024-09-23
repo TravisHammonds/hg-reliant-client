@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Image } from "react-bootstrap";
+import { Container, Row, Col, Image } from "react-bootstrap";
 import "../styles/AboutUs.css"; // Custom CSS for About Us page
 
 const AboutUs = () => {
@@ -15,46 +15,53 @@ const AboutUs = () => {
         all happen:
       </p>
 
-      {/* Travis Section (Left Aligned) */}
-      <div className="d-flex text-white flex-column align-items-start mb-5 profile-section-left">
-        <Image
-          src="travis-hammonds.jpg"
-          roundedCircle
-          width="150"
-          height="150"
-          className="mb-3"
-          alt="Travis Hammonds"
-        />
-        <strong>Travis Hammonds</strong>
-        <p className="text-white" style={{ maxWidth: "75%" }}>
-          Travis is a software engineer with a passion for real estate
-          investing. Since high school, he has been learning and working in the
-          field of real estate, specializing in client interaction and
-          problem-solving. His role is to connect with potential clients and
-          partners, ensuring the success of every deal.
-        </p>
-      </div>
+      {/* Travis Section (Image Left, Text Right) */}
+      <Row className="align-items-center mb-5 profile-section-left">
+        <Col md={3}>
+          <Image
+            src="/assets/images/addison.png"
+            className="profile-image"
+            alt="Addison Good"
+          />
+        </Col>
+        <Col md={9}>
+          <strong className="text-white">Addison Good</strong>
+          <p className="text-white" style={{ maxWidth: "90%" }}>
+            Addison is the Project Manager, responsible for overseeing the
+            renovation process. With a lifetime of experience in project
+            management, Addison handles everything from creating scopes of work
+            to working with suppliers and subcontractors. He is also a co-owner
+            of Hammer Down Industries, a family business where he developed his
+            expertise.
+          </p>
+        </Col>
+      </Row>
 
-      {/* Addison Section (Right Aligned) */}
-      <div className="d-flex text-white flex-column align-items-end profile-section-right">
-        <Image
-          src="addison-good.jpg"
-          roundedCircle
-          width="150"
-          height="150"
-          className="mb-3"
-          alt="Addison Good"
-        />
-        <strong>Addison Good</strong>
-        <p className="text-white" style={{ maxWidth: "75%", textAlign: "right" }}>
-          Addison is the Project Manager, responsible for overseeing the
-          renovation process. With a lifetime of experience in project
-          management, Addison handles everything from creating scopes of work to
-          working with suppliers and subcontractors. He is also a co-owner of
-          Hammer Down Industries, a family business where he developed his
-          expertise.
-        </p>
-      </div>
+      {/* Addison Section (Image Right, Text Left) */}
+      <Row className="align-items-center profile-section-right">
+        <Col md={9}>
+          <strong className="text-white d-flex justify-content-end">
+            Travis Hammonds
+          </strong>
+          <p
+            className="text-white d-flex justify-content-end"
+            style={{ maxWidth: "100%", textAlign: "right" }}
+          >
+            Travis is a software engineer with a passion for real estate
+            investing. Since high school, he has been learning and working in
+            the field of real estate, specializing in client interaction and
+            problem-solving. His role is to connect with potential clients and
+            partners, ensuring the success of every deal.
+          </p>
+        </Col>
+        <Col md={3}>
+          <Image
+            src="assets/images/hammonds-headshot.jpg"
+            className="profile-image"
+            alt="Travis Hammonds"
+          />
+        </Col>
+      </Row>
     </Container>
   );
 };

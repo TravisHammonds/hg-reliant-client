@@ -2,22 +2,22 @@ import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 
 const flippedHomes = [
-  {
-    id: 1,
-    images: [
-      { src: "before1.jpg", caption: "Before renovation - Front view" },
-      { src: "after1.jpg", caption: "After renovation - Front view" },
-    ],
-    caption: "Front view of the house before and after renovation.",
-  },
-  {
-    id: 2,
-    images: [
-      { src: "before2.jpg", caption: "Before renovation - Kitchen" },
-      { src: "after2.jpg", caption: "After renovation - Kitchen" },
-    ],
-    caption: "Kitchen view before and after renovation.",
-  },
+  // {
+  //   id: 1,
+  //   images: [
+  //     { src: "before1.jpg", caption: "Before renovation - Front view" },
+  //     { src: "after1.jpg", caption: "After renovation - Front view" },
+  //   ],
+  //   caption: "Front view of the house before and after renovation.",
+  // },
+  // {
+  //   id: 2,
+  //   images: [
+  //     { src: "before2.jpg", caption: "Before renovation - Kitchen" },
+  //     { src: "after2.jpg", caption: "After renovation - Kitchen" },
+  //   ],
+  //   caption: "Kitchen view before and after renovation.",
+  // },
 ];
 
 const FlippedHomes = () => {
