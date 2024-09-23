@@ -1,0 +1,12 @@
+/* About Us section - Background colors */
+.profile-section-left {
+  background-color: #34495e; /* Light blue background for Travis */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.profile-section-right {
+  background-color: #e67e22; /* Light red background for Addison */
+  padding: 20px;
+  border-radius: 10px;
+}

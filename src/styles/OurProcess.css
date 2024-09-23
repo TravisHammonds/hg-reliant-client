@@ -1,0 +1,84 @@
+/* General Timeline Styling */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Timeline items for desktop: alternate left and right */
+.timeline-item {
+  padding: 20px 40px;
+  position: relative;
+  width: 50%;
+  background-color: #E67E22;  /* Orange color for all timeline items */
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Left aligned items */
+.timeline-item.left {
+  left: 0;
+}
+
+/* Right aligned items */
+.timeline-item.right {
+  left: 50%;
+  text-align: right;
+}
+
+/* Arrows between steps */
+.timeline-arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 20px 0 20px;  /* Arrow points down */
+  border-color: #2C3E50 transparent transparent transparent;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Why Work with Us section */
+.why-work-with-us {
+  text-align: center;
+  margin-top: 40px;
+  background-color: #2C3E50;  /* Blue background */
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.why-work-with-us h4 {
+  margin-bottom: 20px;
+  color: #E67E22;  /* Orange accent for the heading */
+}
+
+/* Mobile responsiveness - stack timeline items vertically and center them */
+@media screen and (max-width: 768px) {
+  .timeline-item {
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  /* Centering the timeline items and arrow on mobile */
+  .timeline-item.left,
+  .timeline-item.right {
+    left: 0;
+    text-align: center;
+  }
+
+  /* Adjust arrows to stay centered */
+  .timeline-arrow {
+    margin: 0 auto;
+    display: block;
+    border-width: 20px 20px 0 20px;
+  }
+
+  /* Padding adjustments for smaller screens */
+  .timeline-item {
+    padding: 20px 20px;
+  }
+}

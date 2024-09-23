@@ -1,0 +1,109 @@
+/* Hero Section */
+.hero-section {
+  background-color: #2c3e50; /* Blue background */
+  color: white;
+}
+
+/* Main Headers */
+.main-header {
+  color: #e67e22; /* Orange header for the hero section */
+  font-weight: bold;
+}
+
+.section-header {
+  color: #34495e; /* Slightly darker blue for section headers */
+  font-weight: bold;
+}
+
+/* Call to Action Buttons */
+.cta-button {
+  background-color: #e67e22 !important; /* Orange button */
+  color: white !important;
+  border: none !important; /* Remove any default borders */
+  padding: 10px 20px;
+  border-radius: 5px;
+  outline: none !important; /* Remove default blue focus outline */
+}
+
+.cta-button:hover {
+  background-color: #d35400 !important; /* Darker orange on hover */
+  color: white !important;
+}
+
+/* Remove the blue focus border when the button is clicked or focused */
+.cta-button:focus {
+  outline: none !important; /* Remove focus outline */
+  box-shadow: none !important; /* Remove any box shadow */
+}
+
+/* Homes for Sale Section */
+.homes-for-sale-section {
+  background-color: #ecf0f1; /* Light grey background */
+}
+
+.home-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.home-card img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.home-card h4 {
+  color: #2c3e50;
+}
+
+.home-card p {
+  color: #7f8c8d;
+}
+
+/* Footer */
+.footer-section {
+  background-color: #2c3e50; /* Blue background */
+  color: white;
+  text-align: center; /* Center all footer content */
+}
+
+.footer-section a {
+  color: #e67e22; /* Orange links */
+}
+
+.footer-section a:hover {
+  color: #d35400; /* Darker orange on hover */
+}
+
+.footer-section h5 {
+  margin-bottom: 20px;
+}
+
+.work-item {
+  text-align: center;
+  padding: 20px;
+}
+
+.work-item img {
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Carousel specific styles */
+.our-work-carousel {
+  margin-top: 20px;
+}
+
+.carousel-img {
+  object-fit: cover; /* Maintain aspect ratio without distortion */
+  height: auto;
+  max-height: 300px; /* Ensure images don't stretch too much */
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); /* Background behind the caption text */
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}

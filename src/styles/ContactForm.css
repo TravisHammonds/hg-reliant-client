@@ -1,0 +1,39 @@
+/* Container styling */
+.contact-form-container {
+  background-color: #f9f9f9; /* Light background for form section */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Custom Form Styling */
+.custom-form .form-control {
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Submit button styling */
+.submit-button {
+  background-color: #e67e22 !important; /* Orange button */
+  color: white !important;
+  border: none !important; /* Remove any default borders */
+  padding: 10px 20px;
+  border-radius: 5px;
+  outline: none !important; /* Remove default blue focus outline */
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #d35400; /* Darker orange on hover */
+  color: white;
+}
+
+/* Contact info styling */
+.contact-info a {
+  color: #2c3e50; /* Darker color for email/phone links */
+}
+
+.contact-info a:hover {
+  color: #e67e22; /* Orange color on hover for links */
+}

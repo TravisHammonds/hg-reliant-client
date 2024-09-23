@@ -1,31 +1,56 @@
-import React from 'react';
-import { Card, Row, Col, Container } from 'react-bootstrap';
+import React from "react";
+import { Container, Row, Col, Card } from "react-bootstrap";
 
 const flippedHomes = [
   {
     id: 1,
-    beforeImage: "before1.jpg",
-    afterImage: "after1.jpg",
-    description: "Complete renovation of a historic property."
+    images: [
+      { src: "before1.jpg", caption: "Before renovation - Front view" },
+      { src: "after1.jpg", caption: "After renovation - Front view" },
+    ],
+    caption: "Front view of the house before and after renovation.",
   },
-  // Add more flipped homes
+  {
+    id: 2,
+    images: [
+      { src: "before2.jpg", caption: "Before renovation - Kitchen" },
+      { src: "after2.jpg", caption: "After renovation - Kitchen" },
+    ],
+    caption: "Kitchen view before and after renovation.",
+  },
 ];
 
 const FlippedHomes = () => {
   return (
     <Container>
-      <h2 className="my-4">Flipped Homes</h2>
+      <h2 className="text-center my-4">Our Gallery</h2>
+
+      {/* Descriptive Text */}
+      <p className="text-center mb-5">
+        At our company, we take great pride in transforming outdated properties
+        into modern, livable homes. Each project reflects our passion for
+        design, attention to detail, and commitment to quality. Below, you'll
+        see a collection of some of the homes we've had the pleasure of
+        renovating. These homes showcase the care we put into every flip, from
+        preserving the character of each property to upgrading its features for
+        modern living. We hope these examples inspire confidence in the work we
+        do.
+      </p>
+
       <Row>
         {flippedHomes.map((home) => (
           <Col key={home.id} md={6} className="mb-4">
             <Card>
-              <Card.Img variant="top" src={home.beforeImage} />
+              <Row noGutters>
+                <Col xs={6}>
+                  <Card.Img src={home.images[0].src} />
+                </Col>
+                <Col xs={6}>
+                  <Card.Img src={home.images[1].src} />
+                </Col>
+              </Row>
               <Card.Body>
-                <Card.Text>Before: {home.description}</Card.Text>
-              </Card.Body>
-              <Card.Img variant="bottom" src={home.afterImage} />
-              <Card.Body>
-                <Card.Text>After: {home.description}</Card.Text>
+                <Card.Text className="text-center">{home.caption}</Card.Text>
               </Card.Body>
             </Card>
           </Col>
